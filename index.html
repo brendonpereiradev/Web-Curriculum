@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Brendon Pereira de Souza — Analista de TI | Cloud Computing, DevOps, Infraestrutura e Automação">
+    <meta name="author" content="Brendon Pereira de Souza">
+    <meta property="og:title" content="Brendon Pereira de Souza — Analista de TI">
+    <meta property="og:description"
+        content="Profissional com sólida base em Cloud Computing, suporte técnico N2 e infraestrutura de TI.">
+    <meta property="og:type" content="website">
+    <title>Brendon Pereira de Souza — Analista de TI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Brendon<span class="logo-dot">.</span>dev<span
+                    class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#sobre" class="nav-link" data-i18n="nav_sobre">Sobre</a></li>
+                <li><a href="#experiencia" class="nav-link" data-i18n="nav_experiencia">Experiência</a></li>
+                <li><a href="#certificacoes" class="nav-link" data-i18n="nav_certificacoes">Certificações</a></li>
+                <li><a href="#formacao" class="nav-link" data-i18n="nav_formacao">Formação</a></li>
+                <li><a href="#habilidades" class="nav-link" data-i18n="nav_habilidades">Habilidades</a></li>
+                <li><a href="#projetos" class="nav-link" data-i18n="nav_projetos">Projetos</a></li>
+                <li><a href="#contato" class="nav-link nav-link--cta" data-i18n="nav_contato">Contato</a></li>
+            </ul>
+            <div class="lang-switcher" id="lang-switcher">
+                <button class="lang-btn" id="lang-btn" aria-label="Trocar idioma">
+                    <i class="fas fa-globe"></i>
+                    <span id="lang-current">PT</span>
+                    <i class="fas fa-chevron-down lang-arrow"></i>
+                </button>
+                <div class="lang-dropdown" id="lang-dropdown">
+                    <button class="lang-option active" data-lang="pt">
+                        <span class="lang-flag">🇧🇷</span> Português
+                    </button>
+                    <button class="lang-option" data-lang="en">
+                        <span class="lang-flag">🇺🇸</span> English
+                    </button>
+                    <button class="lang-option" data-lang="es">
+                        <span class="lang-flag">🇪🇸</span> Español
+                    </button>
+                </div>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow hero-glow--1"></div>
+            <div class="hero-glow hero-glow--2"></div>
+        </div>
+        <div class="hero-content container">
+            <h1 class="hero-title">
+                Brendon Pereira<br>
+                <span class="hero-title--gradient">de Souza</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="hero-role" id="typewriter"></span>
+                <span class="hero-cursor">|</span>
+            </div>
+            <p class="hero-description" data-i18n-html="hero_desc">
+                Profissional com sólida base em <strong>Cloud Computing</strong>, atuando com suporte técnico N2 e
+                infraestrutura de TI. Foco em <strong>Infra/DevOps</strong> e automação de processos.
+            </p>
+            <div class="hero-actions">
+                <a href="#contato" class="btn btn--primary">
+                    <i class="fas fa-envelope"></i>
+                    <span data-i18n="hero_cta">Entre em Contato</span>
+                </a>
+                <a href="https://www.linkedin.com/in/brendonsouza2025/" target="_blank" rel="noopener"
+                    class="btn btn--outline">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label" data-i18n="stat_certs">Certificações AWS</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">N2</span>
+                    <span class="stat-label" data-i18n="stat_suporte">Suporte Técnico</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">DevOps</span>
+                    <span class="stat-label" data-i18n="stat_foco">Foco Principal</span>
+                </div>
+            </div>
+        </div>
+        <a href="#sobre" class="scroll-indicator" aria-label="Rolar para baixo">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- ==================== SOBRE ==================== -->
+    <section class="section sobre" id="sobre">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="sobre_tag">Quem sou eu</span>
+                <h2 class="section-title" data-i18n-html="sobre_title">Sobre <span class="gradient-text">Mim</span></h2>
+            </div>
+            <div class="sobre-grid">
+                <div class="sobre-text reveal">
+                    <p data-i18n-html="sobre_p1">
+                        Sou um profissional apaixonado por tecnologia, com foco em <strong>Cloud Computing</strong> e
+                        <strong>DevOps</strong>.
+                        Atuo com suporte técnico N2, gerenciamento de infraestrutura e automação de processos, buscando
+                        constantemente
+                        soluções que otimizem operações e entreguem valor.
+                    </p>
+                    <p data-i18n-html="sobre_p2">
+                        Com certificações AWS e experiência prática em ambientes corporativos, meu objetivo é construir
+                        e manter
+                        infraestruturas resilientes, escaláveis e seguras utilizando as melhores práticas do mercado.
+                    </p>
+                </div>
+                <div class="sobre-highlights reveal">
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-cloud"></i></div>
+                        <div>
+                            <h3 data-i18n="hl_cloud_title">Cloud Computing</h3>
+                            <p data-i18n="hl_cloud_desc">Arquiteturas AWS com foco em escalabilidade e custo-eficiência
+                            </p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-gears"></i></div>
+                        <div>
+                            <h3 data-i18n="hl_devops_title">DevOps & IaC</h3>
+                            <p data-i18n="hl_devops_desc">Automação de infraestrutura e pipelines CI/CD</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <h3 data-i18n="hl_monitor_title">Monitoramento</h3>
+                            <p data-i18n="hl_monitor_desc">Zabbix, Grafana e Prometheus para observabilidade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EXPERIÊNCIA ==================== -->
+    <section class="section experiencia" id="experiencia">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="exp_tag">Trajetória</span>
+                <h2 class="section-title" data-i18n-html="exp_title">Experiência <span
+                        class="gradient-text">Profissional</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot timeline-dot--active"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-badge" data-i18n="exp_atual">Atual</span>
+                                <h3 class="timeline-title" data-i18n="exp1_title">Analista de Operações Digitais II</h3>
+                                <span class="timeline-company"><i class="fas fa-building"></i> Capgemini</span>
+                            </div>
+                            <span class="timeline-period"><i class="fas fa-calendar"></i> <span
+                                    data-i18n="exp1_period">Set/2025 – Presente</span></span>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li data-i18n="exp1_task1">Suporte técnico a hardware e periféricos</li>
+                            <li data-i18n="exp1_task2">Gerenciamento de redes e infraestrutura</li>
+                            <li data-i18n="exp1_task3">Administração de Active Directory</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title" data-i18n="exp2_title">Instrutor Auxiliar</h3>
+                                <span class="timeline-company"><i class="fas fa-building"></i> Instituto JCA</span>
+                            </div>
+                            <span class="timeline-period"><i class="fas fa-calendar"></i> <span
+                                    data-i18n="exp2_period">Jul/2025 – Ago/2025</span></span>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li data-i18n="exp2_task1">Instrução de hardware e arquitetura de computadores</li>
+                            <li data-i18n="exp2_task2">Ensino de sistemas operacionais (Windows e Linux)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CERTIFICAÇÕES ==================== -->
+    <section class="section certificacoes" id="certificacoes">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="cert_tag">Conquistas</span>
+                <h2 class="section-title" data-i18n-html="cert_title">Certificações <span
+                        class="gradient-text">AWS</span></h2>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card reveal">
+                    <div class="cert-badge">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3 class="cert-title">Solutions Architect</h3>
+                    <span class="cert-level">Associate</span>
+                    <p class="cert-desc" data-i18n="cert1_desc">Arquitetura de soluções escaláveis, resilientes e de
+                        alta disponibilidade na AWS.</p>
+                    <div class="cert-tag">
+                        <i class="fas fa-award"></i> AWS Certified
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-badge">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3 class="cert-title">Cloud Practitioner</h3>
+                    <span class="cert-level">Foundational</span>
+                    <p class="cert-desc" data-i18n="cert2_desc">Conhecimento abrangente dos serviços AWS, segurança,
+                        arquitetura e pricing.</p>
+                    <div class="cert-tag">
+                        <i class="fas fa-award"></i> AWS Certified
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FORMAÇÃO ==================== -->
+    <section class="section formacao" id="formacao">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="form_tag">Educação</span>
+                <h2 class="section-title" data-i18n-html="form_title">Formação <span
+                        class="gradient-text">Acadêmica</span></h2>
+            </div>
+            <div class="formacao-card reveal">
+                <div class="formacao-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="formacao-info">
+                    <h3 data-i18n="form_curso">Análise e Desenvolvimento de Sistemas</h3>
+                    <span class="formacao-inst"><i class="fas fa-university"></i> Universidade Cruzeiro do Sul</span>
+                    <span class="formacao-period"><i class="fas fa-calendar"></i> 2026 – 2028</span>
+                    <span class="formacao-degree" data-i18n="form_grau">Graduação (Tecnólogo)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HABILIDADES ==================== -->
+    <section class="section habilidades" id="habilidades">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="skill_tag">Competências</span>
+                <h2 class="section-title" data-i18n-html="skill_title">Habilidades <span
+                        class="gradient-text">Técnicas</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & AWS</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">EC2</span>
+                        <span class="skill-tag">S3</span>
+                        <span class="skill-tag">Lambda</span>
+                        <span class="skill-tag">DynamoDB</span>
+                        <span class="skill-tag">CloudFront</span>
+                        <span class="skill-tag">API Gateway</span>
+                        <span class="skill-tag">SQS</span>
+                        <span class="skill-tag">Step Functions</span>
+                        <span class="skill-tag">Cognito</span>
+                        <span class="skill-tag">WAF & Shield</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-gears"></i>
+                        <h3>DevOps & IaC</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag" data-i18n="skill_automacao">Automação</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-display"></i>
+                        <h3 data-i18n="skill_so_title">Sistemas Operacionais</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Windows Server</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Active Directory</span>
+                        <span class="skill-tag">GPO</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-chart-area"></i>
+                        <h3 data-i18n="skill_monitor_title">Monitoramento</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Zabbix</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Prometheus</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3 data-i18n="skill_prog_title">Programação & Scripts</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Bash Script</span>
+                        <span class="skill-tag">Shell</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJETOS ==================== -->
+    <section class="section projetos" id="projetos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="proj_tag">Portfólio</span>
+                <h2 class="section-title" data-i18n-html="proj_title">Projetos em <span
+                        class="gradient-text">Destaque</span></h2>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-card-glow"></div>
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-cart-shopping"></i>
+                    </div>
+                    <div>
+                        <h3 class="project-title" data-i18n="proj1_title">E-Commerce Serverless na AWS</h3>
+                        <p class="project-subtitle" data-i18n="proj1_subtitle">Solução escalável utilizando as melhores
+                            práticas da AWS</p>
+                    </div>
+                </div>
+                <p class="project-desc" data-i18n="proj1_desc">
+                    Arquitetura de e-commerce totalmente serverless, construída para alta disponibilidade,
+                    escalabilidade automática e segurança robusta.
+                </p>
+                <div class="project-arch">
+                    <h4><i class="fas fa-layer-group"></i> <span data-i18n="proj_arch_title">Arquitetura
+                            Implementada</span></h4>
+                    <div class="arch-grid">
+                        <div class="arch-item">
+                            <span class="arch-label" data-i18n="arch_proc">Processamento</span>
+                            <span class="arch-value">AWS Lambda + Step Functions</span>
+                        </div>
+                        <div class="arch-item">
+                            <span class="arch-label" data-i18n="arch_db">Banco de Dados</span>
+                            <span class="arch-value">Amazon DynamoDB</span>
+                        </div>
+                        <div class="arch-item">
+                            <span class="arch-label" data-i18n="arch_msg">Mensageria</span>
+                            <span class="arch-value">Amazon SQS</span>
+                        </div>
+                        <div class="arch-item">
+                            <span class="arch-label" data-i18n="arch_dist">Distribuição</span>
+                            <span class="arch-value">CloudFront + S3 + API Gateway</span>
+                        </div>
+                        <div class="arch-item">
+                            <span class="arch-label" data-i18n="arch_sec">Segurança</span>
+                            <span class="arch-value">WAF, Shield & Cognito</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-tags">
+                    <span class="project-tag">Serverless</span>
+                    <span class="project-tag">AWS</span>
+                    <span class="project-tag">Microservices</span>
+                    <span class="project-tag">Cloud Native</span>
+                </div>
+                <div class="project-actions">
+                    <a href="Serverless.pdf" target="_blank" class="btn btn--primary">
+                        <i class="fas fa-file-pdf"></i>
+                        <span data-i18n="proj_pdf_btn">Ver Documentação Completa (PDF)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTATO ==================== -->
+    <section class="section contato" id="contato">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="contato_tag">Vamos conversar</span>
+                <h2 class="section-title" data-i18n-html="contato_title">Entre em <span
+                        class="gradient-text">Contato</span></h2>
+            </div>
+            <p class="contato-intro reveal" data-i18n="contato_intro">
+                Estou sempre aberto a novas oportunidades, colaborações e conversas sobre tecnologia.
+                Fique à vontade para entrar em contato!
+            </p>
+            <div class="contato-grid">
+                <a href="mailto:brendonjb07@gmail.com" class="contato-card reveal">
+                    <div class="contato-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-mail</h3>
+                    <span>brendonjb07@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/brendonsouza2025/" target="_blank" rel="noopener"
+                    class="contato-card reveal">
+                    <div class="contato-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <span>brendonsouza2025</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Brendon<span class="logo-dot">.</span>dev<span
+                        class="logo-bracket">/&gt;</span>
+                </a>
+                <div class="footer-links">
+                    <a href="mailto:brendonjb07@gmail.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/brendonsouza2025/" target="_blank" rel="noopener"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="footer-copy" data-i18n="footer_copy">&copy; 2026 Brendon Pereira de Souza. Todos os direitos
+                    reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
