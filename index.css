@@ -1362,6 +1362,10 @@ strong {
         margin-bottom: 16px;
     }
 
+    .scroll-indicator {
+        bottom: 24px;
+    }
+
     .stat-number {
         font-size: 1.2rem;
     }
@@ -1444,6 +1448,11 @@ strong {
     .hero-stats {
         flex-direction: column;
         gap: 16px;
+        margin-bottom: 60px;
+    }
+
+    .scroll-indicator {
+        bottom: 16px;
     }
 
     .stat-divider {
